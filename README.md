@@ -14,14 +14,14 @@ CMD ["aafire"]
 Мы указали образ, на основе которого все будет работать. Далее указываем, что мы хотим запустить, а именно мы обновляем пакетный менеджер и устанавливаем ПО под названием libaa-bin.  
 Dockerfile готов, сохраняем и запускаем команду сборки образа с тегом `my-aafire`.  
 
-![photo_2024-12-05_14-29-18](https://github.com/user-attachments/assets/aa588d0a-0834-4c1d-be2b-fae4e4b59205)
+![photo_2024-12-05_14-29-18](https://github.com/user-attachments/assets/aa588d0a-0834-4c1d-be2b-fae4e4b59205)  
 
 Далее создаем контейнеры  
 ```
 sudo docker run -it --name my-aafire-1 my-aafire
 sudo docker run -it --name my-aafire-2 my-aafire
 ```
-![photo_2024-12-05_14-36-19](https://github.com/user-attachments/assets/c1004d81-6020-4a96-9b9e-2481560e727d)
+![photo_2024-12-05_14-36-19](https://github.com/user-attachments/assets/c1004d81-6020-4a96-9b9e-2481560e727d)  
 Если мы хотим еще раз запустить эти контейнеры то пишем команду `sudo docker start my-aafire-1`, если же еще мы хотим увидеть повторно огонь, то прописываем еще `sudo docker exec -it my-aafire-1 aafire`.  
 
 Чтобы создать сеть между контейнерами, нужно запустить оба контейнера с `aafire` и оставить их в рабочем состоянии. Далее создаем 3-е окно в терминале и создаем сеть с помощью команды  
@@ -43,7 +43,7 @@ docker network connect myNetwork mycontainer2
 docker exec -it my-aafire-1 ping my-aafire-2
 docker exec -it my-aafire-2 ping my-aafire-1
 ```
-![photo_2024-12-05_18-13-03](https://github.com/user-attachments/assets/cfd1a1b5-5704-4dab-bc65-de92a6a2782b)
+![photo_2024-12-05_18-13-03](https://github.com/user-attachments/assets/cfd1a1b5-5704-4dab-bc65-de92a6a2782b)  
 
 ### Как успешно сдать работу?
 
