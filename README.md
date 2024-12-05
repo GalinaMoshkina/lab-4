@@ -7,9 +7,9 @@
 Внутри Dockerfile мы пишем  
 ```
 FROM ubuntu:latest  
-
+  
 RUN apt-get update && apt-get install -y libaa-bin inetutils-ping && apt-get clean && rm -rf /var/lib/apt/lists/*  
-
+  
 CMD ["aafire"]  
 ```
 
