@@ -1,4 +1,4 @@
-2
+![изображение](https://github.com/user-attachments/assets/3135e4f8-7825-4064-9d99-1ecebe482720)2
 # Лабораторная работа 4.
 
 Для решения понадобится установить Docker. Можно это делать как в виртуальной машине с установленным Linux, так и через WSL (главное на линукс подобной системе).
@@ -44,6 +44,7 @@ docker network connect myNetwork mycontainer2
 docker exec -it my-aafire-1 ping my-aafire-2
 docker exec -it my-aafire-2 ping my-aafire-1
 ```
+![photo_2024-12-05_18-13-03](https://github.com/user-attachments/assets/cfd1a1b5-5704-4dab-bc65-de92a6a2782b)
 
 ### Как успешно сдать работу?
 
