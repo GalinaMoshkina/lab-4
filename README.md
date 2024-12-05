@@ -3,14 +3,14 @@
 
 Для решения понадобится установить Docker. Можно это делать как в виртуальной машине с установленным Linux, так и через WSL (главное на линукс подобной системе).
 ## Решение задания
-Создаем файл 'Dockerfile' с помощью команды 'touch'. Заходим в этот файл с помощью команды 'gedit Dockerfile'.  
+Создаем файл `Dockerfile` с помощью команды `touch`. Заходим в этот файл с помощью команды `gedit Dockerfile`.  
 Внутри Dockerfile мы пишем  
-'FROM ubuntu:latest  
+`FROM ubuntu:latest  
 
 RUN apt-get update && apt-get install -y libaa-bin inetutils-ping && apt-get clean && rm -rf /var/lib/apt/lists/*  
 
 CMD ["aafire"]  
-'
+`
 
 
 Запустить в контейнере приложение “aafire”. Обратите внимание, что оно бесконечное и контейнер не будет автоматически отключаться.  
